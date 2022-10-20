@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php
-include 'koneksi.php';
+include '../../koneksi.php';
 $id = $_GET['id'];
 $data = mysqli_query($koneksi,"select * from mahasiswa where
 id='$id'");

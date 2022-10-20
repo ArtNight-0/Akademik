@@ -7,11 +7,11 @@
     <title>Tambah Data</title>
 </head>
 <body>
-    <a href="page/v_data_mahasiswa/index.php">KEMBALI</a>
+    <a href="../v_data_mahasiswa/index.php">KEMBALI</a>
     <br/>
     <br/>
     <h3>TAMBAH DATA MAHASISWA</h3>
-        <form method="post" action="tambah_aksi.php">
+        <form method="post" action="../v_data_mahasiswa/tambah_aksi.php">
             <table>
                 <tr>
                     <td>Nama</td>
@@ -25,11 +25,8 @@
                     <td>Alamat</td>
                     <td><input type="text" name="alamat"></td>
                 </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="submit" value="SIMPAN"></td>
-                </tr>
             </table>
+            <input type="submit" name="submit" value="SIMPAN">
         </form>
 
     
