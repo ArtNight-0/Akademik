@@ -29,8 +29,8 @@
             <td><?php echo $d['npm']; ?></td>
             <td><?php echo $d['alamat']; ?></td>
             <td>
-                <a class="btn btn-sm btn-warning" href="../v_data_mahasiswa/edit.php?id=<?php echo $d['id']; ?>">EDIT</a>
-                <a class="btn btn-sm btn-danger" href="../v_data_mahasiswa/delete.php?id=<?php echo $d['id']; ?>">HAPUS</a>
+                <a class="btn btn-sm btn-warning" href="../v_data_mahasiswa/edit.php?npm=<?php echo $d['npm']; ?>">EDIT</a>
+                <a class="btn btn-sm btn-danger" href="../v_data_mahasiswa/delete.php?npm=<?php echo $d['npm']; ?>">HAPUS</a>
             </td>
         </tr>
 <?php

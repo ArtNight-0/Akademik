@@ -9,9 +9,8 @@
 <body>
     <?php
 include '../../koneksi.php';
-$id = $_GET['id'];
-$data = mysqli_query($koneksi,"select * from mahasiswa where
-id='$id'");
+$npm = $_GET['npm'];
+$data = mysqli_query($koneksi,"select * from mahasiswa where npm='$npm'");
 while($d = mysqli_fetch_array($data)){
 ?>
     <form method="post" action="update.php">
@@ -19,7 +18,7 @@ while($d = mysqli_fetch_array($data)){
             <tr>
                 <td>Nama</td>
                 <td>
-                <input type="hidden" name="id" value="<?php echo $d['id'];
+                <input type="hidden" name="npm" value="<?php echo $d['npm'];
                 ?>">
                 <input type="text" name="nama" value="<?php echo $d['nama'];
                 ?>">
