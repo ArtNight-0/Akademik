@@ -18,15 +18,15 @@ header("location:page/v_admin/index.php?pesan=belum_login");
 <!-- <h4>Selamat datang, <?php echo $_SESSION['username']; ?>! -->
 <!-- anda telah login.</h4> -->
 <nav class="navbar navbar-expand-lg bg-light">
-  <div class="container">
-    <a class="navbar-brand" href="#">Navbar</a>
+  <div class="container mx-auto">
+    <a class="navbar-brand" href="index.php">Kelompok 6</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.php">Home</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -34,16 +34,16 @@ header("location:page/v_admin/index.php?pesan=belum_login");
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="index.php?page=input_data">Mahasiswa</a></li>
-                <li><a class="dropdown-item" href="#">Dosen</a></li>
-                <li><a class="dropdown-item" href="#">Mata Kuliah</a></li>
+                <li><a class="dropdown-item" href="index.php?page=dosen">Dosen</a></li>
+                <li><a class="dropdown-item" href="index.php?page=mata_kuliah">Mata Kuliah</a></li>
                 <li><a class="dropdown-item" href="#">Nilai</a></li>
               </ul>
             </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.php?page=tentang">Laporan</a>
+          <a class="nav-link" href="#">Laporan</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="index.php?page=tentang">About</a>
         </li>
       </ul>
     </div>
@@ -68,8 +68,11 @@ header("location:page/v_admin/index.php?pesan=belum_login");
                     case 'tentang':
                     include "../v_about/about.php";
                     break;
-                    case 'tutorial':
-                    include "../v_tutor/tutor.php";
+                    case 'dosen':
+                    include "../v_data_dosen/index.php";
+                    break;
+                    case 'mata_kuliah':
+                    include "../v_data_matakuliah/index.php";
                     break;
                     default:
                        echo "<center><h3>Maaf. Halaman tidak di temukan!</h3></center>";

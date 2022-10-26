@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100&display=swap");
+
 body {
   background-color: #f9f9f9;
   font-size: 16px;
@@ -59,4 +61,50 @@ div.badan {
 div.halaman {
   text-align: center;
   padding: 30px 20px;
+}
+
+/* about */
+
+.project {
+  display: flex;
+  height: 940px;
+  background-color: #f8f8f8;
+  align-items: center;
+}
+
+.project .container .row .project-card {
+  display: flex;
+  align-items: flex-start;
+  background-color: transparent;
+  border: none;
+}
+
+.project .container .row .project-card h5 {
+  font-family: "BEBAS NEUE";
+  font-size: 24px;
+}
+.project .container .row .project-card p {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.project .container .row .title h2 {
+  font-family: "BEBAS NEUE";
+  font-size: 48px;
+  text-align: center;
+}
+
+.project .container .row .title hr {
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: #502e9c;
+  width: 200px;
+  margin-bottom: 6rem;
+}
+
+.project .container .row .card {
+  height: 600px;
+  background-color: transparent;
+  border: none;
 }

@@ -7,8 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <a class="btn btn-sm btn-primary mx-3 mt-3 mb-2" href="../v_data_dosen/tambah.php">+Tambah Data</a>
-    <div class="halaman">
+    <div class="halaman col-8 mx-auto">
+        <a class="btn btn-sm btn-primary mx-3 mt-3 mb-2" href="../v_data_dosen/tambah.php">+Tambah Data</a>
     <table class="table table-striped">
         <tr>
         <th>KD Dosen</th>
@@ -23,8 +23,7 @@
         $data = mysqli_query($koneksi,"select * from dosen");
         while($d = mysqli_fetch_array($data)){
         ?>
-        <tr>
-            <td><?php echo $no++; ?></td>
+        <tr>    
             <td><?php echo $d['kd_dosen']; ?></td>
             <td><?php echo $d['nama_dosen']; ?></td>
             <td><?php echo $d['email']; ?></td>

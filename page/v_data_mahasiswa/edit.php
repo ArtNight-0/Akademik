@@ -40,6 +40,7 @@ while($d = mysqli_fetch_array($data)){
             </tr>
         </table>
     </form>
+
 <?php
 }
 ?>

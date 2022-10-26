@@ -7,8 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <a class="btn btn-sm btn-primary mx-3 mt-3 mb-2" href="../v_data_mahasiswa/tambah.php">+Tambah Data</a>
-    <div class="halaman">
+    <div class="halaman col-8 mx-auto">
+        <a class="btn btn-sm btn-primary mx-3 mt-3 mb-2" href="../v_data_mahasiswa/tambah.php">+Tambah Data</a>
     <table class="table table-striped">
         <tr>
         <th>NO</th>
