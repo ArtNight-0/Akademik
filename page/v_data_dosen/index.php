@@ -24,7 +24,6 @@
         while($d = mysqli_fetch_array($data)){
         ?>
         <tr>
-            <td><?php echo $no++; ?></td>
             <td><?php echo $d['kd_dosen']; ?></td>
             <td><?php echo $d['nama_dosen']; ?></td>
             <td><?php echo $d['email']; ?></td>
