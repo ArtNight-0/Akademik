@@ -40,7 +40,7 @@ header("location:page/v_admin/index.php?pesan=belum_login");
               </ul>
             </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Laporan</a>
+          <a class="nav-link" href="../v_laporan/index.php">Laporan</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="index.php?page=tentang">About</a>
