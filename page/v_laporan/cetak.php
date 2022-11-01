@@ -48,4 +48,3 @@ window.print();
 </script>
 </body>
 </html>
-Samp

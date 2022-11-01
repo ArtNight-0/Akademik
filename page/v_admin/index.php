@@ -74,6 +74,9 @@ header("location:page/v_admin/index.php?pesan=belum_login");
                     case 'mata_kuliah':
                     include "../v_data_matakuliah/index.php";
                     break;
+                    case 'laporan':
+                    include "../v_laporan/index.php";
+                    break;
                     default:
                        echo "<center><h3>Maaf. Halaman tidak di temukan!</h3></center>";
                      break;

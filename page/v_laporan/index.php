@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/stylee.css">
 <title>CETAK PRINT DATA DARI DATABASE DENGAN PHP</title>
 </head>
 <body>
@@ -12,7 +17,9 @@ include '../../koneksi.php';
 ?>
 <a href="cetak.php" target="_blank">CETAK</a>
 <br>
-<table border="1">
+
+<div class="halama"></div>
+    <table class="table table-striped">
 <tr>
 <th>ID</th>
 <th>NPM</th>
@@ -43,6 +50,7 @@ while($data = mysqli_fetch_array($sql)){
 }
 ?>
 </table>
+</div>
 <br/>
 </center>
 </body>

@@ -8,11 +8,11 @@
     <title>Document</title>
 </head>
 <body>
-     <div class="container title mt-4 text-center">
+     <div class="container title pt-4 text-center">
     <h2>Tabel Mahasiswa</h2>
   </div>
     <div class="halaman col-8 mx-auto">
-        <a class="btn btn-sm btn-primary mt-4 mb-3" href="../v_data_mahasiswa/tambah.php">+Tambah Data</a>
+        <a class="btn btn-sm btn-primary mt-4 mb-3 m-0" href="../v_data_mahasiswa/tambah.php">+Tambah Data</a>
     <table class="table table-striped">
         <tr>
         <th>NO</th>
